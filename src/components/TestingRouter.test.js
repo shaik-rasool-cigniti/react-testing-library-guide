@@ -1,9 +1,9 @@
+import { fireEvent, render } from '@testing-library/react'
+
 import React from 'react'
 import { Router } from 'react-router-dom'
-import { render, fireEvent } from '@testing-library/react'
+import TestRouter from './TestingRouter'
 import { createMemoryHistory } from 'history'
-import TestRouter from './TestRouter'
-
 
 const renderWithRouter = (component) => {
     const history = createMemoryHistory()

@@ -1,7 +1,8 @@
+import { fireEvent, render, waitForElement } from '@testing-library/react'
+
 import React from 'react'
-import { render, waitForElement, fireEvent } from '@testing-library/react'
+import TestAxios from './TestingAxios'
 import axiosMock from 'axios'
-import TestAxios from './TestAxios'
 
 jest.mock('axios')
 

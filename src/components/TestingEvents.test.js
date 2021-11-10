@@ -1,8 +1,9 @@
-import React from 'react';
-import { render, cleanup, fireEvent } from '@testing-library/react';
-import TestEvents from './TestEvents'
+import { cleanup, fireEvent, render } from '@testing-library/react';
 
-  afterEach(cleanup);
+import React from 'react';
+import TestEvents from './TestingEvents'
+
+afterEach(cleanup);
   
   it('increments counter', () => {
     const { getByTestId } = render(<TestEvents />); 

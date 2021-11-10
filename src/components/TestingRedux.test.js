@@ -1,9 +1,10 @@
-import React from 'react'
-import { createStore } from 'redux'
-import { Provider } from 'react-redux'
-import { render, cleanup,  fireEvent } from '@testing-library/react';
+import { cleanup, fireEvent, render } from '@testing-library/react';
 import { initialState, reducer } from '../store/reducer'
-import TestRedux from './TestRedux'
+
+import { Provider } from 'react-redux'
+import React from 'react'
+import TestRedux from './TestingRedux'
+import { createStore } from 'redux'
 
 const renderWithRedux = (
   component,
